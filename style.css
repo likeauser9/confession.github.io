@@ -21,7 +21,10 @@ body {
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  font-family: "Monsterrat", "Monsterrat Bold", sans-serif;
+}
+
+#text {
+  font-family: "Monsterrat", sans-serif;
 }
 
 .textContainer {
