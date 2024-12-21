@@ -1,0 +1,102 @@
+@font-face {
+  font-family: "Monsterrat";
+  src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Monsterrat Bold";
+  src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #FFB6C1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Monsterrat", "Monsterrat Bold", sans-serif;
+}
+
+.textContainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 5em;
+  letter-spacing: 5px;
+  font-family: monospace;
+  width: 100%;
+  border-right: 3px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 7s, cursor .4s step-end infinite alternate;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.heartContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 75px;
+}
+
+.heart {
+  height: 70px;
+  width: 70px;
+  background: #f20044;
+  position: relative;
+  transform: rotate(-45deg);
+  box-shadow: -10px 10px 90px #f20044;
+  animation: heart .6s linear infinite;
+}
+
+.heart::before,
+.heart::after {
+  content: '';
+  height: 70px;
+  width: 70px;
+  background: #f20044;
+  position: absolute;
+  border-radius: 50px;
+  box-shadow: 0 0 90px #f20044;
+}
+
+.heart::before {
+  top: -50%;
+  left: 0;
+}
+
+.heart::after {
+  right: -50%;
+  top: 0;
+}
+
+@keyframes heart {
+  0% {
+    transform: rotate(-45deg) scale(1.07);
+  }
+  80% {
+    transform: rotate(-45deg) scale(1.0);
+  }
+  100% {
+    transform: rotate(-45deg) scale(1.07);
+  }
+}
