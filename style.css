@@ -8,6 +8,11 @@
   src: url("/fonts/Montserrat-Bold.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/fonts/Ubuntu-Regular.ttf") format("truetype");
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -24,7 +29,7 @@ body {
 }
 
 #text {
-  font-family: "Monsterrat", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .textContainer {

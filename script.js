@@ -7,7 +7,7 @@ var Typewriter = new Typewriter(text, {
 
 Typewriter
   .pauseFor(1000)
-  .typeString('<span style="font-size: 30px; font-family: "Monsterrat", sans-serif">Женя, ты очень <strong>красивая</strong></span>')
+  .typeString('<span style="font-size: 30px;">Женя, ты очень <strong>красивая</strong></span>')
   .pauseFor(1000)
   .deleteChars(8)
   .typeString('<strong style="font-size: 30px">милая</strong>')
