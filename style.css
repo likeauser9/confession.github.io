@@ -30,6 +30,9 @@ body {
 
 #text {
   font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  word-wrap: break-word;
+  margin: 0 auto;
 }
 
 .textContainer {
